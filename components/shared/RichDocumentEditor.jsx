@@ -43,8 +43,8 @@ const RichDocumentEditor = ({ params }) => {
       (doc) => {
         if (isFetched == false || doc.data()?.editedBy !== emailUser) {
           doc.data()?.output && editor?.render(doc.data()?.output);
-          isFetched = true;
         }
+        isFetched = true;
       }
     );
   };
